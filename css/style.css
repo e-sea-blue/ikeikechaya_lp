@@ -1,0 +1,731 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #FFF;
+	font-size: 14px;
+    line-height: 1.6;
+	font-family:"Gothic MB101","ゴシックMB101 L","Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Meiryo", "メイリオ", "メイリオ", "FontAwesome", sans-serif;
+}
+a {
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+h1,h2,p,ul {
+	margin: 0;
+}
+
+/*----------------------------
+/* ヘッダー部
+*----------------------------*/
+
+.site-header {
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	height: 55px;
+	width: 100%;
+	padding-top: 10px;
+	z-index: 100;
+}
+
+.header-wrapper {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 900px;
+	margin: 0 auto;
+}
+
+.site-header img {
+	display: inline-block;
+	margin-top: 8px;
+	width: 40%;
+}
+
+.site-header img.sp {
+	display: inline-block;
+	margin-top: 14px;
+}
+
+
+/*----------------------------
+/* 右側のメニュー
+*----------------------------*/
+
+
+.menu {
+	display:inline-block;
+	justify-content: flex-end;
+	
+}
+.menu ul {
+	margin-top: 10px;
+	padding: 0;
+
+}
+.menu li {
+	display: inline-block;
+	margin-left: 15px;
+
+}
+.menu a {
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+}
+.menu a:hover {
+	color: #777;
+}
+
+/*----------------------------
+/* ボタン部分
+*----------------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 13px;
+    line-height: 1.5em;
+    position: relative;
+    /* display: inline-block; */
+    padding: 1px 8px 0px 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    /* vertical-align: middle; */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    /* border-radius: 0.5rem; */
+    border: 1px solid #000;
+}
+
+.btn--white,
+a.btn--white {
+  color: #000;
+  background-color: #FFF;
+}
+
+.btn--white:hover,
+a.btn--white:hover {
+  color: #000;
+  background: yellow;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.btn-area {
+    margin: 0 auto;
+    padding: 10px 0 60px;
+    text-align: center;
+}
+
+/*----------------------------
+/* サイトメイン部分
+*----------------------------*/
+.site-main {
+	margin-top: 55px;
+	position: relative;
+}
+
+/*----------------------------
+/* メインビジュアル
+*----------------------------*/
+っっっっっっっっっっっっっっっっっっっっっっっっd.img__inner{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1.0s;
+}
+
+.current-img{
+  opacity: 1;
+  z-index: 20;
+}
+
+
+/*----------------------------
+/* 漁業・セクション
+*----------------------------*/
+.section-gyogyo1 {
+	background-color: #FFF;
+	margin: 0 auto;
+}
+.section-gyogyo1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 31px 32px 31px;
+    border-color: transparent transparent #e6e6e6 transparent;
+    left: calc( 50% - 31px );
+    z-index: -1;
+}
+.gyogyo-inner1 {
+	padding: 50px 0 15px;
+	margin: 0 auto;
+	width: 700px;
+	display: flex;	
+	background-image: url(../img/img_gyosen.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom 5px right;
+	background-size: auto;
+}
+
+.gyogyo-text {
+	width: 450px;
+
+}
+.gyogyo-text h1 {
+	font-size: 21px;
+	margin-bottom: 5px;
+	font-weight: normal;
+
+}
+
+
+.section-gyogyo2 {
+	background-color: #E6E6E6;
+	margin: 0 auto;
+}
+
+.gyogyo-inner2 {
+	margin: 30px auto 0;
+	padding: 50px 0 45px;
+	width: 700px;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+}
+
+.gyogyo-imgarea {
+	display: block;
+	width: 340px;
+	position: relative;
+	background-color: #FFF;
+	margin-bottom: 10px;
+
+}
+
+.gyogyo-imgarea h2 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 8px 24px 0 ;
+
+}
+.gyogyo-imgarea p {
+	font-size: 12px;
+	font-weight: normal;
+	margin: 5px 24px 20px ;
+
+}
+/*----------------------------
+/* 水産・セクション
+*----------------------------*/
+.section-suisan1 {
+	background-color: #FFF;
+	margin: 0 auto;
+}
+.section-suisan1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 31px 32px 31px;
+    border-color: transparent transparent #e6e6e6 transparent;
+    left: calc( 50% - 31px );
+    z-index: -1;
+}
+
+.suisan-inner1 {
+	padding: 50px 0 15px;
+	margin: 0 auto;
+	width: 700px;
+	display: flex;	
+	background-image: url(../img/img_factory.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom 5px right;
+	background-size: auto;
+}
+.main-btn,
+a.main-btn,
+button.main-btn {
+    font-size: 18px;
+    line-height: 1.5em;
+    position: relative;
+    padding: 10px 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    border: 1px solid #000;
+    margin: 45px auto 20px;
+}
+.btn-order {
+	font-size:24px;
+}
+
+.main-btn--white,
+a.main-btn--white {
+  color: #000;
+  background-color: #FFF;
+}
+
+.main-btn--white:hover,
+a.btn--white:hover {
+  color: #000;
+  background: yellow;
+}
+
+a.main-btn--radius {
+  border-radius: 100vh;
+}
+
+/*----------------------------
+/* レストラン・セクション
+*----------------------------*/
+.section-restaurant1 {
+	background-color: #FFF;
+	margin: 0 auto;
+}
+.section-restaurant1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 31px 32px 31px;
+    border-color: transparent transparent #e6e6e6 transparent;
+    left: calc( 50% - 31px );
+    z-index: -1;
+}
+
+.restaurant-inner1 {
+	padding: 50px 0 30px;
+	margin: 0 auto;
+	width: 700px;
+	display: flex;	
+	background-image: url(../img/img_restaurant.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom 20px right;
+	background-size: auto;
+}
+
+.restaurant-text {
+	width: 450px;
+
+}
+.restaurant-text h1 {
+	font-size: 21px;
+	margin-bottom: 5px;
+	font-weight: normal;
+
+}
+
+.section-restaurant2 {
+	background-color: #E6E6E6;
+	margin: 30px auto 0;
+
+}
+
+.restaurant-inner2 {
+	margin: 30px auto 0;
+	padding: 50px 0 45px;
+	width: 700px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu-area {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-box {
+	display: block;
+	width: 220px;
+	position: relative;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #FFF;
+	margin-bottom: 20px;
+	align-items: center;
+	flex-shrink: 0;
+
+}
+
+.menu-box ul {
+    display: flex;
+    margin: 0 10px 5px ;
+    justify-content: space-between;
+
+}
+
+.menu-text {
+	height: 40px;
+	position: relative;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #FFF;
+	align-items: center;
+}
+
+/*----------------------------
+/* テイクアウト　リボン
+*----------------------------*/
+.takeout {
+ position: relative;
+}
+
+.takeout img{
+	width: 100%;
+}
+
+.takeout .ribon {
+	position: absolute;
+	top: -2px;
+	left: -3px;
+	margin:0;/*余計な隙間を除く*/
+	padding:0;/*余計な隙間を除く*/
+
+  }
+/*----------------------------
+/* 名物　装飾
+*----------------------------*/
+.meibutsu {
+	position: relative;
+}
+
+.meibutsu .pop{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+  margin:0;/*余計な隙間を除く*/
+  padding:0;/*余計な隙間を除く*/  
+}
+
+.meibutsu img{
+	width: 100%;
+}
+
+.section-movie {
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+.movie-inner {
+	padding: 50px 0 15px;
+	margin: 0 auto;
+	width: 700px;
+	text-align: center;
+}
+
+/*----------------------------
+/* フッター部
+*----------------------------*/
+.site-footer {
+	background-color: #FFF;
+	padding: 30px 0;
+}
+.ft-wrapper {
+	width: 900px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.address img{
+	width: 50%;
+}
+.address p{
+	margin-top: 20px;
+}
+
+.ft-footer {
+	width: 900px;
+	margin: 20px auto 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+.ft-footer li {
+	display: inline-block;
+	margin-right: 30px;
+}
+.ft-footer li a {
+	text-decoration: none;
+	font-size: 24px;
+}
+
+
+/* スマホで見たときは""のclassがついた画像が表示される */
+.sp { display: none !important; }
+
+/*----------------------------
+* スマホ・タブレット用の指定 ( 900px以下 )
+*----------------------------*/
+@media only screen and ( max-width: 900px ) {
+ 	.pc { display: none !important; }
+    .sp { display: block !important; }
+
+* {
+    box-sizing: border-box;
+}
+/*----------------------------
+/* ヘッダー部
+*----------------------------*/
+
+	.site-header {
+		padding: 0 15px;
+	
+	}
+
+	.header-wrapper {
+	    display: flex;
+	    justify-content: space-between;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.header-wrapper img {
+		height: 100%;
+		width: 155px;
+		margin: 5px;
+	}
+
+	
+	.menu .fa-shopping-cart{
+	margin-top: 8px;
+	display: inline-block;
+    font-size: 150%;
+    align-items: center;
+	}
+
+
+	/*----------------------------
+	/* サイトメイン部分
+	*----------------------------*/
+	.site-main {
+		margin-top: 60px;
+	}
+	.main-visual {
+	    height: calc( 100vh - 290px );
+	}
+
+	.img__inner{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	}
+
+	.img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 1.0s;
+	}
+
+
+	.current-img{
+	  opacity: 1;
+	  z-index: 20;
+	}
+
+
+	.gyogyo-inner1 {
+    padding: 120px 15px 15px;
+    margin: 0 auto;
+    width: auto;
+    background-image: url(../img/img_gyosen.jpg) no-repeat;
+    background-position: top 20px center;
+    background-size: 150px;
+
+	}
+
+	.gyogyo-text {
+    width: auto;
+	}
+
+	.gyogyo-inner2 {
+		margin: 30px auto 0;
+		width: 340px;
+	}
+
+	.gyogyo-imgarea {
+	display: block;
+	width: 340px;
+	background-color: #FFF;
+	margin: 0 auto 20px;
+	}
+
+
+
+	.suisan-inner1 {
+    padding: 120px 15px 15px;
+    margin: 0 auto;
+    width: auto;
+    background-image: url(../img/img_suisan.jpg) no-repeat;
+    background-position: top 25px center;
+    background-size: 100px;
+	}
+
+	.restaurant-inner1 {
+    padding: 120px 15px 15px;
+    margin: 0 auto;
+    width: auto;
+    background-image: url(../img/img_suisan.jpg) no-repeat;
+    background-position: top 25px center;
+    background-size: 100px;
+	}
+
+	.restaurant-text {
+    width: auto;
+	}
+
+	.restaurant-inner2 {
+		width: auto;
+		margin: 30px auto 0;
+	}
+	
+	.menu-box {
+		margin: 0 auto 20px;
+		display: block;
+		display: -webkit-block;
+		width: 340px;
+		font-size: 12px;
+		font-weight: normal;
+		background-color: #FFF;
+		align-items: center;
+	}
+
+	.menu-box ul {
+	    margin: 0 10px 5px ;
+
+	}
+
+	.menu-text {
+		height: 40px;
+		position: relative;
+		font-size: 12px;
+		font-weight: normal;
+		background-color: #FFF;
+		align-items: center;
+	}
+
+
+
+
+
+
+/* 動画全体の横幅を指定するためのdiv */
+.section-movie {
+  max-width: 80%; /* ここに動画の横幅を指定 */
+  margin: 30px auto 0;
+}
+
+/* 動画を囲うdiv */
+.movie-inner {
+  position: relative;
+  width:100%; /* 横幅は100%で固定 */
+  height:0; /* 高さは0にしておく(padding-topで高さを指定するため) */
+  padding-top: 56.25%; /* 高さを指定(16:9) */
+}
+
+/* YouTube埋め込み用のiframe */
+.movie-inner iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+	/*----------------------------
+	/* フッター部
+	*----------------------------*/
+	.site-footer {
+		padding: 40px 15px 30px;
+	}
+	.ft-wrapper {
+		width: auto;
+		display: block;
+	}
+
+	.ft-footer {
+		width: auto;
+		display: block;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.sns {
+		margin-top: 40px;
+	}
+}
+
+/*----------------------------
+* PC用の指定 ( 1024px以上 )
+*----------------------------*/
+@media ( min-width: 1024px ) {
+	.only-sp {
+		display: none;
+	}
+}
